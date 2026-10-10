@@ -1,0 +1,405 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Ahmed ♡</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Great+Vibes&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --pink: #e9b5c8;
+  --rose: #c58ca5;
+  --mauve: #927184;
+  --cream: #fffaf5;
+  --text: #755563;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #fff4f6;
+  color: var(--text);
+  font-family: 'Cormorant Garamond', serif;
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 17px 7%;
+  background: #fffaf5eF;
+  border-bottom: 1px solid #e9b5c855;
+}
+
+.logo {
+  font-family: 'Great Vibes', cursive;
+  font-size: 32px;
+  color: #b77994;
+}
+
+.nav {
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.hero {
+  min-height: 85vh;
+  padding: 55px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: radial-gradient(
+    ellipse at 50% 25%,
+    #f2dce6,
+    #fff0f4 55%,
+    #fffaf5
+  );
+}
+
+.eyebrow {
+  font-size: 12px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #b77994;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: clamp(40px, 8vw, 74px);
+  color: #8e687c;
+  margin: 20px 0 5px;
+}
+
+.script {
+  font-family: 'Great Vibes', cursive;
+  font-size: clamp(30px, 5vw, 45px);
+  color: #c18aa3;
+  margin-bottom: 20px;
+}
+
+.heart-icon {
+  font-size: 42px;
+  color: #d997b0;
+  margin: 15px;
+  animation: heartbeat 1.5s infinite;
+}
+
+@keyframes heartbeat {
+  50% { transform: scale(1.15); }
+}
+
+.description {
+  font-size: 20px;
+  line-height: 1.7;
+  max-width: 420px;
+  color: #8d7482;
+}
+
+form {
+  width: min(100%, 370px);
+  display: flex;
+  border: 1px solid #d7a0b6;
+  border-radius: 40px;
+  padding: 5px;
+  margin-top: 25px;
+  background: #fffaf5;
+  box-shadow: 0 5px 20px #d7a0b622;
+}
+
+input {
+  min-width: 0;
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 12px;
+  color: #795a6b;
+  font-family: inherit;
+  font-size: 16px;
+}
+
+input::placeholder { color: #b999a9; }
+
+button {
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  transition: .3s;
+}
+
+button:hover { transform: scale(1.04); }
+
+.unlock {
+  border-radius: 30px;
+  padding: 12px 19px;
+  background: #e9b5c8;
+  color: #714e60;
+  font-size: 16px;
+}
+
+.unlock:hover { background: #e3a0ba; }
+
+#error {
+  min-height: 25px;
+  color: #b77994;
+  margin-top: 12px;
+  font-size: 16px;
+}
+
+/* The letter */
+
+.letter-section {
+  display: none;
+  padding: 65px 20px;
+  background: linear-gradient(
+    135deg, #fff0f4, #f8e8ed, #fff7f0
+  );
+  animation: reveal 1.2s ease;
+}
+
+@keyframes reveal {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.paper {
+  max-width: 680px;
+  margin: auto;
+  padding: clamp(25px, 6vw, 60px);
+  color: #755563;
+  background: linear-gradient(135deg, #fffaf5, #fcecf0);
+  box-shadow: 0 15px 60px #bd8da326;
+  border: 1px solid #e9c8d5;
+  position: relative;
+}
+
+.paper::before {
+  content: "♡";
+  display: block;
+  text-align: center;
+  font-size: 25px;
+  color: #d69bb2;
+  margin-bottom: 20px;
+}
+
+.paper h2 {
+  font: 38px 'Great Vibes', cursive;
+  color: #a5748c;
+}
+
+.paper p {
+  font-size: 19px;
+  line-height: 1.85;
+}
+
+.signature {
+  text-align: right;
+  font: 32px 'Great Vibes', cursive;
+  color: #a5748c;
+  margin-top: 35px;
+}
+
+.back {
+  display: block;
+  margin: 30px auto 0;
+  background: transparent;
+  color: #a5748c;
+  border: 1px solid #d7a0b6;
+  border-radius: 30px;
+  padding: 12px 25px;
+  font-size: 16px;
+}
+
+footer {
+  padding: 55px 20px;
+  text-align: center;
+  color: #b77994;
+  background: #fff8f6;
+  border-top: 1px solid #e9b5c855;
+}
+
+footer p {
+  font: 32px 'Great Vibes', cursive;
+}
+
+.floating-heart {
+  position: fixed;
+  bottom: -35px;
+  z-index: 10;
+  pointer-events: none;
+  color: #d990ad;
+  text-shadow: 0 0 12px #e9b5c855;
+  animation: floatUp linear forwards;
+}
+
+@keyframes floatUp {
+  to {
+    transform: translateY(-110vh) rotate(30deg);
+    opacity: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  header { padding: 15px 5%; }
+  .nav { font-size: 12px; }
+  .hero { min-height: 80vh; }
+  .paper p { font-size: 18px; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">For Ahmed ♡</div>
+  <div class="nav">A LOVE STORY ♡</div>
+</header>
+
+<section class="hero" id="home">
+  <div class="eyebrow">A little piece of my heart</div>
+
+  <h1>A Special Letter</h1>
+  <div class="script">for someone very special...</div>
+
+  <div class="heart-icon">♡</div>
+
+  <p class="description">
+    There's something I want to tell you,<br>
+    but first you have to unlock it.
+  </p>
+
+  <form id="passwordForm">
+    <input
+      id="password"
+      type="password"
+      placeholder="Enter the secret password..."
+      aria-label="Secret password"
+      autocomplete="off"
+      required
+    >
+    <button class="unlock" type="submit">Unlock ♡</button>
+  </form>
+
+  <div id="error" role="status"></div>
+</section>
+
+<section class="letter-section" id="letter">
+  <div class="paper">
+
+    <div class="eyebrow">A letter from my heart</div>
+
+    <h2>My dearest Ahmed,</h2>
+
+    <p>
+      Sometimes, I wish I could put all my feelings into words, just so you could understand how much you truly mean to me. You became such a special part of my life, and I'm so grateful that I got to know you and experience a feeling as beautiful as loving you. You mean more to me than I could ever explain, and no matter how many words I write, I don't think they will ever be enough to describe what's in my heart.
+    </p>
+
+    <p>
+      I hope life gives you everything you've ever dreamed of. I hope you achieve your goals, find happiness in the smallest things, and always have reasons to smile. I hope you never doubt your worth or forget how special you are. Even on the days when everything feels difficult, I hope you remember that you deserve all the beautiful things this world has to offer.
+    </p>
+
+    <p>
+     I wish I could protect you from every sadness, take away every worry, and make life a little easier for you. But more than anything, I wish for you to be happy, even on the days when I'm not there to see your smile.
+
+    <p>
+      Whatever the future holds for us, I will always wish you the best. I hope your heart stays kind, your dreams come true, and life brings you more happiness than you could ever imagine. And if I could make one wish, it would be for you to look back one day and smile at the memories we've shared.
+    </p>
+
+     <p>
+      So hamoudi if you ever wonder whether you matter to me,
+      come back to this little letter. It's my way of reminding
+      you that i am genuinely happy you're part of my life
+      And no matter how ordinary a day may seem, the thought
+      of you can make it feel a little more special. ♡
+    </p>
+
+    <div class="signature">
+      All my love,<br>
+      iram ♡
+    </div>
+
+  </div>
+
+  <button class="back" onclick="goHome()">
+    Back to Home ♡
+  </button>
+</section>
+
+<footer>
+  <div>♡ &nbsp; ✧ &nbsp; ♡ &nbsp; ✧ &nbsp; ♡</div>
+  <p>Some hearts feel like home...</p>
+  <div>Made with love, just for my Ahmed ♡</div>
+</footer>
+
+<script>
+const SECRET_PASSWORD = "iramxahmed";
+
+const form = document.getElementById("passwordForm");
+const passwordInput = document.getElementById("password");
+const error = document.getElementById("error");
+const letter = document.getElementById("letter");
+
+form.addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  if (
+    passwordInput.value.trim().toLowerCase() ===
+    SECRET_PASSWORD.toLowerCase()
+  ) {
+    error.textContent = "";
+    letter.style.display = "block";
+
+    letter.scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    });
+
+    passwordInput.value = "";
+  } else {
+    error.textContent = "Not quite, my love... try again ♡";
+    passwordInput.value = "";
+    passwordInput.focus();
+  }
+});
+
+function goHome() {
+  letter.style.display = "none";
+
+  document.getElementById("home").scrollIntoView({
+    behavior: "smooth"
+  });
+}
+
+function createHeart() {
+  const heart = document.createElement("span");
+  heart.className = "floating-heart";
+
+  const hearts = ["♡", "♥", "♥", "ღ"];
+  heart.textContent =
+    hearts[Math.floor(Math.random() * hearts.length)];
+
+  heart.style.left = Math.random() * 100 + "vw";
+  heart.style.fontSize = (14 + Math.random() * 20) + "px";
+  heart.style.animationDuration =
+    (5 + Math.random() * 5) + "s";
+
+  document.body.appendChild(heart);
+
+  setTimeout(() => heart.remove(), 10000);
+}
+
+setInterval(createHeart, 650);
+</script>
+
+</body>
+</html>
